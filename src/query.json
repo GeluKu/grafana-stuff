@@ -1,0 +1,16 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "range": {
+            "@timestamp": {
+              "gte": "now-3M/M",
+              "lte": "now/M"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
